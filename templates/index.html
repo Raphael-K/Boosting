@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <div id="container" class="flex-container horizontal">
+      {{image|safe}}
+
+      {{image2|safe}}
+  </div>
+   <form method="post" action="/">
+        {{ form.csrf_token}}
+        {{form.n}}
+        <input type="submit">
+    </form>
+
+{% endblock %}

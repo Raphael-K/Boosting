@@ -1,0 +1,71 @@
+html, body {
+    height: 100%
+    width:100%;
+}
+body            { font-family: sans-serif; font-size:22;}
+
+
+
+
+g.mpld3-xaxis, g.mpld3-yaxis {
+display: none;
+}
+
+.flex-container {
+        display: flex;
+        justify-content:space-around;
+        height:100%;
+        flex-wrap:wrap;
+
+}
+
+.horizontal {
+    flex-direction:row;
+                  }
+
+.vertical {
+    flex-direction:column;
+    background-color: #ddd;
+}
+
+
+
+
+div#container {
+    width: 80%;
+    height: 450px;
+    float:left;
+    background-color: #ccc;
+    border-radius: 50px;
+
+}
+
+.first {
+    width: 45%;
+    float: left;
+    height: 100%;
+    align-items:center;
+    background-color: yellow;
+
+}
+.second {
+    color:blue;
+    width: 55%;
+    float: left;
+    height: 100%;
+    background-color: green;
+}
+
+
+input {
+  width: 250px;
+  height: 70px;
+  margin: 20px;  
+
+  font-weight: bold;
+  border-radius: 20px
+  
+
+
+.error { background: #f0d6d6; padding: 0.1em; }
+.clear { clear: both; }
