@@ -21,11 +21,16 @@ display: none;
 
 .horizontal {
     flex-direction:row;
+    align-items:center;
                   }
 
 .vertical {
     flex-direction:column;
+    align-items:center;
     background-color: #ddd;
+    border-radius:50px;
+
+
 }
 
 
@@ -33,37 +38,19 @@ display: none;
 
 div#container {
     width: 80%;
-    height: 450px;
     float:left;
     background-color: #ccc;
     border-radius: 50px;
 
 }
 
-.first {
-    width: 45%;
-    float: left;
-    height: 100%;
-    align-items:center;
-    background-color: yellow;
-
-}
-.second {
-    color:blue;
-    width: 55%;
-    float: left;
-    height: 100%;
-    background-color: green;
-}
 
 
 input {
-  width: 250px;
-  height: 70px;
-  margin: 20px;  
-
   font-weight: bold;
-  border-radius: 20px
+  margin:0;
+  width:30px;
+}
   
 
 
