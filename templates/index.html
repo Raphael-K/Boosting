@@ -1,14 +1,34 @@
-{% extends "base.html" %}
-{% block content %}
-  <div id="container" class="flex-container horizontal">
-      {{image|safe}}
 
-      {{image2|safe}}
-  </div>
-   <form method="post" action="/">
-        {{ form.csrf_token}}
-        {{form.n}}
-        <input type="submit">
-    </form>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Boosting Vizualization</title>
+		<script type="text/javascript" src="http://mpld3.github.io/js/mpld3.v0.2.js"></script>
+		<link rel=stylesheet type=text/css href="./static/styles.css?v={{ran}}">
 
-{% endblock %}
+
+	</head>
+	<body>
+		<h1> Boosting Visualization </h1>
+		<div id="container" class="flex-container horizontal">
+			<div class="flex-container vertical">
+      			{{image|safe}}
+      			<h2>Single Classifier</h2>
+      		</div>
+      		<div class="flex-container vertical">
+      			{{image2|safe}}
+      			<h2>Combined classifiers</h2>
+      		</div>
+      		<form method="post" action="/" class="flex-container horizontal">
+      			<p>n: </p>
+        		{{ form.csrf_token}}
+        		{{form.n}}
+        		<input type="submit" value="Go" style="visibility: hidden;">
+    		</form>
+
+
+  		</div>
+
+
+	</body>
+</html>
